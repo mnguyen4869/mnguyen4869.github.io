@@ -24,75 +24,20 @@
 	font-family: OpenSans;
 }
 
-body {
-	display: grid;
-	grid-template: 10% 90% / 20% 80%;
-}
-
-.main {
-	grid-column: 2;
-	text-align: center;
-	margin-left: 2rem;
-	margin-right: 3rem;
-}
-
-.header {
-	font-family: Benne;
-}
-
-img {
-	border: 0.25rem double #dbf9ff;
-}
-
-.homebanner {
-	border: 0.25rem solid #dbf9ff;
-	margin-left: 6rem;
-	margin-right: 6rem;
-}
-.homebanner h1 {
-	grid-row: 1;
-	font-size: 2.5em;
-}
-.homebanner img {
-	margin-top: 1rem;
-	width: auto;
-}
-
-.post {
-	border: 0.1rem solid #dbf9ff;
-	margin: 3rem;
-}
-.post h2 {
-	font-size: 2em;
-}
-.post p {
-	text-align: left;
-	font-size: 1.5em;
-	overflow-y: hidden;
-
-	padding: 1rem;
-	padding-left: 5rem;
-	padding-right: 5rem;
-}
-
-
 aside {
-	grid-column: 1;
-	grid-row: 1 / -1;
+	position: fixed;
 	background-color: #0d3b40;
 	color: #dbf9ff;
+	border: 0.1rem solid #dbf9ff;
 
 	font-family: Benne;
 	font-size: 1.5em;
-	text-align: center;
-	margin: 1rem;
+	text-align: left;
 
 }
-aside picture img{
-	width: auto;
+aside picture img {
 }
 aside ul {
-	padding: 2% 1%;
 	list-style-type: none;
 }
 aside ul li {
@@ -105,4 +50,73 @@ aside a:link, aside a:visited {
 /* add animations here later */
 aside a:hover {
 	text-decoration: underline dotted;
+}
+
+.main {
+	position: absolute;
+	margin-left: 320px;
+	margin-right: 20px; 
+	text-align: center;
+}
+
+a:link {
+	color: #fad39d;
+}
+a:visited {
+	color: #cf80b2;
+}
+
+.header {
+	font-family: Benne;
+}
+
+img {
+	border: 0.25rem double #dbf9ff;
+}
+
+.homebanner {
+	position: relative;
+	border: 0.25rem solid #dbf9ff;
+	width: 840px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.homebanner h1 {
+	font-size: 2.25em;
+}
+.homebanner img {
+	margin-top: 1rem;
+	width: auto;
+}
+
+.post {
+	border: 0.1rem solid #dbf9ff;
+	margin: 3rem;
+}
+.post h2 {
+	font-size: 2em;
+	text-align: left;
+	padding-left: 2em;
+}
+.post h2 time {
+	float: right;
+	padding-right: 2em;
+}
+.post h2 + p {
+	border-top: 2px dotted;
+}
+.post p {
+	text-align: left;
+	font-size: 1.5em;
+	overflow-y: hidden;
+
+	padding: 1rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+.error {
+	margin: 0;
+	text-align: center;
+	font-size: 1.5em;
 }

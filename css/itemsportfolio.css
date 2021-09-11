@@ -1,0 +1,11 @@
+
+aside picture {
+	background: url(../images/square_dark_dither_it_futta2158.png) no-repeat;
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+}
+aside picture:hover {
+	background: url(../images/square_dark_dither_it_futta2866.png) no-repeat;
+	display: inline-block;
+}
