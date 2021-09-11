@@ -17,15 +17,11 @@
 }
 
 :root {
-	background-color: #dbf9ff;
-	foreground-color: #dbf9ff;
-	color: #0d3b40;
+	background-color: #0d3b40;
+	foreground-color: #0d3b40;
+	color: #dbf9ff;
 	font-size: 1em;
 	font-family: OpenSans;
-}
-
-.header {
-	font-family: Benne;
 }
 
 body {
@@ -36,16 +32,49 @@ body {
 .main {
 	grid-column: 2;
 	text-align: center;
+	margin-left: 2rem;
+	margin-right: 3rem;
 }
 
-h1 {
+.header {
+	font-family: Benne;
+}
+
+img {
+	border: 0.25rem double #dbf9ff;
+}
+
+.homebanner {
+	border: 0.25rem solid #dbf9ff;
+	margin-left: 6rem;
+	margin-right: 6rem;
+}
+.homebanner h1 {
 	grid-row: 1;
-	font-size: 3em;
+	font-size: 2.5em;
+}
+.homebanner img {
+	margin-top: 1rem;
+	width: auto;
 }
 
-h1 + picture {
-	background-image(images/dark_dither_it_futta2307.png);
+.post {
+	border: 0.1rem solid #dbf9ff;
+	margin: 3rem;
 }
+.post h2 {
+	font-size: 2em;
+}
+.post p {
+	text-align: left;
+	font-size: 1.5em;
+	overflow-y: hidden;
+
+	padding: 1rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
 
 aside {
 	grid-column: 1;
@@ -60,7 +89,7 @@ aside {
 
 }
 aside picture img{
-	width: 90%;
+	width: auto;
 }
 aside ul {
 	padding: 2% 1%;
